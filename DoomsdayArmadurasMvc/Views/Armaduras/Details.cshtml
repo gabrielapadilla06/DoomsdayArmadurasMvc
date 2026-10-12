@@ -1,0 +1,50 @@
+﻿@model DoomsdayArmadurasMvc.Models.Armadura
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Armadura</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Reino.Nombre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Reino.Nombre)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Nombre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nombre)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Nivel)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nivel)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Portador)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Portador)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ArmaduraId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
